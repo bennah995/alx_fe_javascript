@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Quote Generator</title>
+    <link rel="stylesheet" href="new-style.css" />
+</head>
+<body>
+    <h1>Dynamic Quote Generator</h1>
+
+    <div id="syncStatus" style="text-align: center; margin-bottom: 10px; font-weight: bold; color: blue;"></div>
+
+    <div class="filter-container">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            </select>
+    </div>
+
+    <div id="quoteDisplay"></div>
+
+    <div class="buttons-container">
+        <button id="newQuote">Show New Quote</button>
+        <button id="exportQuotes">Export Quotes</button>
+        <button id="importQuotes">Import Quotes</button> </div>
+
+    <div id="formContainer"></div>
+
+    <input type="file" id="hiddenFileInput" accept=".json" style="display: none;">
+
+
+    <script src="script.js"></script>
+</body>
+</html>
