@@ -1,0 +1,37 @@
+/* ... (your existing CSS) ... */
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    justify-content: center;
+}
+
+/* General Button Styles */
+button {
+    background-color: #5cb85c; /* Green for main actions */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+/* ... (existing styles for #exportQuotes and .add-button) ... */
+
+/* NEW: Import Button Specific Style */
+#importQuotes {
+    background-color: #337ab7; /* Blue for import */
+}
+
+#importQuotes:hover {
+    background-color: #286090;
+}
+
+/* ... (rest of your CSS) ... */
